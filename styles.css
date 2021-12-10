@@ -7,6 +7,15 @@ body{
     margin-top: 285px;
     text-align: center;
 }
+
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
 h1 {
     color: #025157;
     font-family: "Alegreya", serif;
@@ -23,14 +32,11 @@ P {
     color: #8b8b8bcc;
 }
 
-.signup-form { 
+.signup-form {
     height: 55px;
     display: block;
 }
-input, .boton2 {
-    height: 100%;
-    border-radius: 8px;
-}
+
 .boton2, input {
     overflow: visible;
 }
@@ -42,12 +48,16 @@ input, .boton2 {
     border-bottom-left-radius: 0;
     margin-left: -10px;
     padding: 6px 20px;
+    height: 100%;
+    border-radius: 8px;
 }
 input {
-    border: 1px solid #b6b6b6;  
+    border: 1px solid #b6b6b6;
     width: 60%;
     max-width: 250px;
     padding: 2px 10px;
+    height: 100%;
+    border-radius: 8px;
 }
 
 .header {
@@ -94,3 +104,70 @@ input {
     padding: 12px 14px;
     margin-left: 10px;
 }
+
+
+.promo {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    align-items: center;
+}
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.explanatory-video img{
+    width: 120;
+    margin-top: 10px;
+}
+.publish {
+    margin-bottom: 100px;
+   padding: 10px;
+   flex: 1;
+}
+
+.publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+    font-weight: 900;
+}
+
+.publish .signup-form input{
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+    height: 75%;
+    border-radius: 8px;
+}
+
+.publish .signup-form button{
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
+}
+
+.publish .signup-form {
+    height: 55px;
+}
+
+.publish .texto-publish {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish .texto-gris-publish {
+    color: #8b8b8bcc;
+    margin-top: 15px;
+}
+
